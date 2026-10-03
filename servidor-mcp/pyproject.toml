@@ -1,0 +1,15 @@
+[project]
+name = "servidor-mcp"
+version = "1.0.0"
+description = "Servidor MCP (Streamable HTTP) da Central de Salas - desafio A Ponte"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp==2.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/servidor_mcp"]
